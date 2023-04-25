@@ -27,9 +27,9 @@ while True:
 def notaFinal(nota_examen,num_proyectos):
     if nota_examen > 90 or num_proyectos > 10:
         return '100'
-    elif nota_examen > 75 or num_proyectos >= 5:
+    elif nota_examen > 75 and num_proyectos >= 5:
         return '90'
-    elif nota_examen > 50 or num_proyectos >= 2:
+    elif nota_examen > 50 and num_proyectos >= 2:
         return '75'
     else:
         return '0'
