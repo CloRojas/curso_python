@@ -30,16 +30,18 @@ class Motocicleta:
         print('El precio de la motocicleta', self.marca, self.modelo,  'es', self.precio)
     
     def reporte_combustible(self):
-        print('Reporte del depósito de motocicleta', self.marca, ' modelo', self.modelo)
+        print('Reporte de tanque de motocicleta', self.marca, ' modelo', self.modelo)
         print('Litros de combustible disponible:', self.combustible_litro)
         print('Capacidad máxima de tanque:', self.cap_max)
         print('Faltan', self.cap_max - self.combustible_litro, 'para llenar el tanque')
 
     def cargar_combustible(self):
+        while True:
         self.carga_combustible = float(input('¿Cuantos litros de combustible desea cargar?'))
         if self.carga_combustible + self.combustible_litro <= self.cap_max:
             self.combustible_litro = self.combustible_litro + self.carga_combustible
             print(' Carga realizada, el tanque ahora tiene', self.combustible_litro, 'litros')
+        break;   
         else:
             print('Supera la capacidad máxima del tanque')
 
