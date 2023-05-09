@@ -1,10 +1,14 @@
 palabra = 'paralepepípedo'
 
-for letra in palabra:
-    if letra =='a' or letra == 'e' or letra == 'ì' or letra == 'o':  
+for index, letra in enumerate(palabra):
+    if letra =='a' or letra == 'e' or letra == 'í' or letra == 'o':  
         continue
-    print(letra)
+    print(letra, 'está en la pocisión', index+1, 'de la palabra "paralepepípedo"')  
+      
     
+   
+
+
         
     
    
