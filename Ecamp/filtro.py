@@ -14,6 +14,7 @@ def imprimir_nombres(lista):
 
 
 print('La lista completa:', nombres)
+
 hacer_grandioso(magos)
 print('Los magos grandiosos son:')
 imprimir_nombres(magos)
